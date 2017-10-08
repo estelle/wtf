@@ -30,37 +30,11 @@ Copyright: 2017,  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-Share
 </header>
       <h1>Estelle Weyl</h1>
       <h4>@estellevw</h3>
-      <h4>instartlogic.github.io/wtf?</h4>
+      <h4>estelle.github.io/wtf?</h4>
       <a href="indexjs.html" style="font-size: 1rem; color: #999; text-decoration: underline;">If you need JS</a><br/>
       <a href="indextarget.html" style="font-size: 1rem; color: #999; text-decoration: underline;">With :target</a>
     </div>
 
-
-<input type="checkbox" id="chkbx_IL">
-<label for="chkbx_IL"><span>About Instart Logic</span></label>
-<div class="slide intro" style="background-image: none;">
-<header>
-  <img src="images/instartlogo.svg" alt="instart logic" style="width: 50vw; display: block; margin: 10vh auto 10px;">
-  <p style="text-align: center;">
-    Making web and mobile applications <br>
-    fast, secure, and easy to operate.
-  </p>
-  <div style="display: inline-flex; justify-content: space-around; margin: 0 auto; text-align: left ">
-    <ul style="padding: 0 2vw">
-      <li>JS Streaming</li>
-      <li>HTML Streaming</li>
-      <li>Image Optimization</li>
-    </ul>
-    <ul style="padding: 0 2vw">
-      <li>Machine Learning</li>
-      <li>Application Virtualization</li>
-      <li>Intelligent CDN</li>
-    </ul>
-  </div>
-  <ul style="display:flex; margin: -1em auto 0 auto; justify-content: center;">
-      <li>AdBlock UnBlocking</li>
-      </ul>
-</div>
 
 
 
@@ -79,6 +53,15 @@ Copyright: 2017,  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-Share
 <header><h1>Vertical Centering</h1></header>
   <figure><object data="files/vertical.html"></object></figure>
   <a href="files/vertical.html" target="play" title="open code example in new window">↪</a>
+</div>
+
+
+<input type="checkbox" id="chkbx_flexjustify">
+<label for="chkbx_flexjustify"><span>Horizontal Centering</span></label>
+<div class="slide">
+<header><h1>Horizontal Centering</h1></header>
+  <figure><object data="files/justify.html"></object></figure>
+  <a href="files/justify.html" target="play" title="open code example in new window">↪</a>
 </div>
 
 <input type="checkbox" id="chkbx_baseline">
@@ -259,12 +242,21 @@ p.btn {cursor: pointer;}</pre>
     <section class="content">
       <ul>
         <li>!important ignored in @keyframe &amp; original values
-        <li>animation-name: identifier (not string).
+        </li>
+        <li>animation-name: identifier <strike>not</strike> <u>or</u> string.
+        </li>
         <li>Applied in order declared.
-        <li>Original values used if missing 0% or 100%.
-        <li>animation-iteration-count: O+ || infinite;
-        <li>Events: 1 animationstart, n animationiterations, 1 animationend
+        </li>
+        <li>Original values used if missing 0% or 100% <em>unless inherited from another animation</em>.
+        </li>
+        <li>animation-iteration-count: 0+ || infinite;
+        </li>
+        <li>Events: 1 animationstart, n animationiterations*, 1 animationend
+        </li>
         <li>Characters: animation-timing-function: steps(n, end);
+        </li>
+      </ul>
+      <p style="font-size: 0.5em">* No iteration if at same time as end</small>
     </section>
 </div>
 
@@ -412,14 +404,6 @@ p.btn {cursor: pointer;}</pre>
 
 
 
- <input type="checkbox" id="shapes_heart">
-<label for="shapes_heart"><span>Shapes with SVG</span></label>
- <div class="slide">
-     <header><h1>CSS Shapes with SVG Masking</h1></header>
-
-     <figure><object data="files/shapes_heart.html"></object></figure>
-  <a href="files/shapes_heart.html" target="play" title="open code example in new window">↪</a>
- </div>
 
 <!-- Reduce File Size - JPG not PNG, with Masking -->
 
