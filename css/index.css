@@ -68,10 +68,6 @@ body {
 .slide {
   background-color: #fffffe; }
 
-body .slide:after {
-  background: no-repeat 1.5rem 68%/5rem url(../images/instartlogo.svg) #fffffe;
-  padding-right: 6rem; }
-
 header, section {
   padding: 10px 20px; }
 
