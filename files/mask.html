@@ -31,11 +31,10 @@ div {
   background-image: linear-gradient(red,orange,yellow,green,blue,purple);
   background-image: url(../images/kittenjaw.jpg);
 }
-div:after {
-  content: '';
-  position: absolute;
+div:after { content: ''; position: absolute;
   top:0; bottom: 0; left: 0; right: 0;
   background-image:  url(images/phone.jpg);
+  -webkit-mask: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
   -webkit-mask:  url(images/mask.png);
 }</style>
 </head>
