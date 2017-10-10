@@ -172,11 +172,12 @@ article:before {
   background-color: #f50; }
 </style>
 
-<style contenteditable class="editme">div {
-  animation: width 5s cubic-bezier(0,4,1,-4) both;
-}
+<style contenteditable class="editme">div { animation: width 5s linear both; }
 @keyframes width  {
   0% {width: 500px;}
+  25% {width: 400px;}
+  50% {width: 300px; border-color: #f50; animation-timing-function: steps(4,end);}
+  75% {width: 200px;}
   100% {width: 100px;}
 }</style>
 <title>Understanding Cubic Bezier</title>
